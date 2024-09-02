@@ -1,0 +1,19 @@
+[package]
+name = "OxideRS"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+console_error_panic_hook = "0.1.7"
+log = "0.4.21"
+palette = "0.7.6"
+quote = "1.0.36"
+syn = "2.0.66"
+wasm-bindgen = "0.2.92"
+wasm-bindgen-test = "0.3.42"
+wasm-logger = "0.2.0"
+web-sys = {version = "0.3.69", features = ["Document", "Window", "Element", "HtmlElement"]}
+oxideRS-css-macros = {path = "./src/css_ops/macros"}
+[lib]
+crate-type = ["cdylib"]
+proc-macro = true
